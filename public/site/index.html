@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freshta - Mandi Freshness Delivered to Your Society</title>
+  <meta name="description" content="Fresh vegetables at mandi price delivered daily to your society. No warehouse, no storage, just daily fresh vegetables from Freshta." />
+  <meta name="keywords" content="fresh vegetables, mandi price, vegetable delivery, farm to home, Freshta" />
+  <meta name="theme-color" content="#2E7D32" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="navbar-logo">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="14" fill="#2E7D32"/>
+          <path d="M16 8c-2 0-4 3-4 8s2 8 4 8 4-3 4-8-2-8-4-8z" fill="#A5D6A7"/>
+          <path d="M16 6c0 0-2-2-1-4s3-1 3 1-2 3-2 3z" fill="#1B5E20"/>
+        </svg>
+        Freshta
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#why">Why Freshta</a></li>
+        <li><a href="#vegetables">Vegetables</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://wa.me/916207823585?text=Hi%2C%20I%20want%20to%20order%20fresh%20vegetables%20from%20Freshta." class="nav-cta" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.553 4.115 1.519 5.845L.058 23.678a.5.5 0 00.612.612l5.834-1.46A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.94 9.94 0 01-5.382-1.572l-.386-.232-3.462.867.884-3.462-.232-.386A9.94 9.94 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+          Order Now
+        </a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#why" onclick="closeMobileNav()">Why Freshta</a>
+    <a href="#vegetables" onclick="closeMobileNav()">Vegetables</a>
+    <a href="#how" onclick="closeMobileNav()">How It Works</a>
+    <a href="#about" onclick="closeMobileNav()">About</a>
+    <a href="#contact" onclick="closeMobileNav()">Contact</a>
+    <a href="https://wa.me/916207823585?text=Hi%2C%20I%20want%20to%20order%20fresh%20vegetables%20from%20Freshta." class="btn btn-primary" target="_blank" rel="noopener">Order on WhatsApp</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content fade-in">
+        <div class="hero-badge"><span></span> Delivering Freshness Daily</div>
+        <h1>Farm Fresh Vegetables at <span class="highlight">Mandi Price</span></h1>
+        <p class="hero-sub">No warehouse. No storage. Just daily fresh vegetables delivered straight from the mandi to your society.</p>
+        <div class="hero-buttons">
+          <a href="https://wa.me/916207823585?text=Hi%2C%20I%20want%20to%20order%20fresh%20vegetables%20from%20Freshta." class="btn btn-primary" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.553 4.115 1.519 5.845L.058 23.678a.5.5 0 00.612.612l5.834-1.46A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.94 9.94 0 01-5.382-1.572l-.386-.232-3.462.867.884-3.462-.232-.386A9.94 9.94 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+            Order on WhatsApp
+          </a>
+          <a href="tel:+916207823585" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            Call Now
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong>500+</strong>
+            <span>Happy Families</span>
+          </div>
+          <div class="hero-stat">
+            <strong>30+</strong>
+            <span>Fresh Vegetables</span>
+          </div>
+          <div class="hero-stat">
+            <strong>6AM</strong>
+            <span>Daily Fresh Stock</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image fade-in">
+        <img src="images/hero-vegetables.jpg" alt="Fresh vegetables arranged in a basket from Freshta" loading="eager" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY FRESHTA ===== -->
+  <section class="section why-section" id="why">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-label">Why Choose Us</div>
+        <h2 class="section-title">Why Freshta?</h2>
+        <p class="section-subtitle">We are not another grocery app. We are your direct connection to the freshest vegetables at honest prices.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card fade-in">
+          <div class="feature-icon green">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Daily Fresh from Mandi</h3>
+          <p>We source vegetables every morning directly from the wholesale mandi. Zero storage time.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon green">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>Direct to Society</h3>
+          <p>We deliver right to your apartment society gate. No need to step outside your complex.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon orange">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          </div>
+          <h3>Mandi Price - No Markup</h3>
+          <p>You pay what we pay at the mandi. No middlemen, no extra charges, no hidden costs.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon green">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>No Cold Storage</h3>
+          <p>We never store your vegetables. What is bought today is delivered today. Always fresh.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VEGETABLES ===== -->
+  <section class="section" id="vegetables">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-label">Our Collection</div>
+        <h2 class="section-title">Fresh Vegetables</h2>
+        <p class="section-subtitle">Handpicked daily from the mandi. Tap on any vegetable to order directly via WhatsApp.</p>
+      </div>
+      <div class="veg-grid" id="vegGrid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="section how-section" id="how">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-label">Our Process</div>
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">From mandi to your doorstep in 4 simple steps. Fresh every single day.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card fade-in">
+          <div class="step-number">1</div>
+          <h3>We Buy from Mandi</h3>
+          <p>Every morning we handpick the freshest stock at the wholesale market.</p>
+        </div>
+        <div class="step-card fade-in">
+          <div class="step-number">2</div>
+          <h3>Sort &amp; Pack</h3>
+          <p>Vegetables are sorted, cleaned, and packed the very same day.</p>
+        </div>
+        <div class="step-card fade-in">
+          <div class="step-number">3</div>
+          <h3>Deliver to Society</h3>
+          <p>Your order arrives at your apartment society gate, fresh and on time.</p>
+        </div>
+        <div class="step-card fade-in">
+          <div class="step-number">4</div>
+          <h3>Pay on Delivery</h3>
+          <p>No upfront payment needed. Pay cash or UPI when you receive your order.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-label">Testimonials</div>
+        <h2 class="section-title">What Our Customers Say</h2>
+        <p class="section-subtitle">Join hundreds of happy families who trust Freshta for their daily vegetables.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-stars">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <blockquote>"Vegetables are super fresh and cheaper than the local market! My family loves the quality and convenience."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">RK</div>
+            <div>
+              <div class="testimonial-name">Ramesh Kumar</div>
+              <div class="testimonial-role">Apartment Resident, Sector 12</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-stars">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <blockquote>"Ordering via WhatsApp is so simple. I just message them and vegetables arrive at my gate. Brilliant idea!"</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">PS</div>
+            <div>
+              <div class="testimonial-name">Priya Sharma</div>
+              <div class="testimonial-role">Working Professional, Green Valley</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-stars">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <blockquote>"Finally someone who delivers mandi-fresh vegetables without charging double the price. Highly recommended!"</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AV</div>
+            <div>
+              <div class="testimonial-name">Anil Verma</div>
+              <div class="testimonial-role">Retired Teacher, Sunrise Society</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-label">Our Story</div>
+        <h2 class="section-title">About Freshta</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-text fade-in">
+          <h3>Mandi Freshness, Delivered Honestly.</h3>
+          <p>Freshta was started with a simple idea &mdash; bring mandi freshness directly to homes without warehouses and unnecessary price hikes. We believe every family deserves access to the freshest vegetables at the most honest price.</p>
+          <p>Every single day, our team wakes up before dawn, heads to the wholesale mandi, handpicks the best produce, sorts and packs it, and delivers it straight to your apartment society. No cold storage. No old stock. Just pure freshness.</p>
+          <div class="about-highlights">
+            <div class="about-highlight">
+              <div class="about-highlight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              No warehouse or cold storage
+            </div>
+            <div class="about-highlight">
+              <div class="about-highlight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              Direct mandi sourcing every day
+            </div>
+            <div class="about-highlight">
+              <div class="about-highlight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              Pay on delivery &mdash; cash or UPI
+            </div>
+          </div>
+        </div>
+        <div class="about-visual fade-in">
+          <div class="about-card">
+            <div class="about-card-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </div>
+            <h4>500+</h4>
+            <p>Happy families trust us every day for their fresh vegetable needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-label">Get in Touch</div>
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">Have a question or want to start ordering? Reach out to us anytime.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card fade-in">
+          <div class="contact-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.553 4.115 1.519 5.845L.058 23.678a.5.5 0 00.612.612l5.834-1.46A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.94 9.94 0 01-5.382-1.572l-.386-.232-3.462.867.884-3.462-.232-.386A9.94 9.94 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+          </div>
+          <h4>WhatsApp</h4>
+          <p>Message us anytime to place an order or ask about availability.</p>
+          <p style="margin-top:10px"><a href="https://wa.me/916207823585?text=Hi%2C%20I%20want%20to%20order%20fresh%20vegetables%20from%20Freshta." target="_blank" rel="noopener">+91 6207823585</a></p>
+        </div>
+        <div class="contact-card fade-in">
+          <div class="contact-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <h4>Phone</h4>
+          <p>Call us for bulk orders or any enquiries.</p>
+          <p style="margin-top:10px"><a href="tel:+916207823585">+91 6207823585</a></p>
+        </div>
+        <div class="contact-card fade-in">
+          <div class="contact-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h4>Delivery Hours</h4>
+          <p>Morning Delivery: 7 AM - 10 AM</p>
+          <p>Evening Delivery: 5 PM - 8 PM</p>
+          <p style="margin-top:10px; font-weight:600; color: var(--green-primary);">Service Area: Local Societies</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-inner fade-in">
+        <h2>Ready to Taste the Freshness?</h2>
+        <p>Order your daily vegetables now and experience the difference of mandi-fresh produce at honest prices.</p>
+        <a href="https://wa.me/916207823585?text=Hi%2C%20I%20want%20to%20order%20fresh%20vegetables%20from%20Freshta." class="btn-cta-white" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color:#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.553 4.115 1.519 5.845L.058 23.678a.5.5 0 00.612.612l5.834-1.46A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.94 9.94 0 01-5.382-1.572l-.386-.232-3.462.867.884-3.462-.232-.386A9.94 9.94 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+          Order on WhatsApp Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Freshta</h3>
+          <p>Mandi freshness delivered to your society. No warehouse, no storage &mdash; just honest pricing and daily fresh vegetables.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="#why">Why Freshta</a>
+          <a href="#vegetables">Vegetables</a>
+          <a href="#how">How It Works</a>
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Vegetables</h4>
+          <a href="#vegetables">Potato</a>
+          <a href="#vegetables">Onion</a>
+          <a href="#vegetables">Tomato</a>
+          <a href="#vegetables">Spinach</a>
+          <a href="#vegetables">Cauliflower</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <a href="https://wa.me/916207823585" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="tel:+916207823585">+91 6207823585</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Freshta. All rights reserved.</span>
+        <a href="#hero">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING WHATSAPP ===== -->
+  <a href="https://wa.me/916207823585?text=Hi%2C%20I%20want%20to%20order%20fresh%20vegetables%20from%20Freshta." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.553 4.115 1.519 5.845L.058 23.678a.5.5 0 00.612.612l5.834-1.46A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.94 9.94 0 01-5.382-1.572l-.386-.232-3.462.867.884-3.462-.232-.386A9.94 9.94 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
